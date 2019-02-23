@@ -1,3 +1,51 @@
 body {
-    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #626262;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-header .navbar {
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.site-header .navbar-nav > li {
+    padding: 0 20px;
+    line-height: 128px;
+    position: relative;
+}
+
+.site-header .navbar-nav > li:first-child {
+    padding-left: 0;
+}
+
+.site-header .navbar-nav > li:last-child {
+    padding-right: 0;
+}
+
+.site-header .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #18181a;
+    padding: 0 8px;
+    line-height: 1;
+}
+
+.site-header .navbar-nav > .active > a:before {
+    content: '';
+    background: #d30c6a;
+    height: 8px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.site-header .navbar-nav > li > a:hover {
+    text-decoration: none;
 }

@@ -170,7 +170,7 @@ h6 {
 
 .home-cta {
     background: #f2f2f2 url(../img/home-banner-01.jpg) no-repeat top center;
-    background-size: cover;
+    background-size: cover; 
     color: #fff;
     padding: 2rem 0 1rem 0;
 }

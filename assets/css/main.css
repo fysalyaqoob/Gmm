@@ -271,6 +271,25 @@ h6 {
     display: block;
 }
 
+.list-media-02 .media-item {
+    margin-top: 4rem;
+}
+
+.list-media-02 h3 {
+    font-size: 1.875rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.list-media-02 .media-odd .media-body {
+    text-align: right;
+    padding-right: 4rem;
+}
+
+.list-media-02 .media-even .media-body {
+    padding-left: 4rem;
+}
+
 @media (min-width: 992px) {
     .hero-title {
         font-size: 3.75rem;
@@ -492,6 +511,23 @@ h6 {
     
     .section .h2-small {
         font-size: 1.75rem;
+    }
+    
+    .list-media-02 .media-odd .media-body {
+        text-align: inherit;
+        padding-right: 0;
+    }
+    
+    .list-media-02 .media-even .media-body {
+        padding-left: 0;
+    }
+    
+    .list-media-02 .media-item {
+        text-align: center;
+    }
+    
+    .list-media-02 .media-item .media-body {
+        padding-top: 2rem;
     }
 }
 

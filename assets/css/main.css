@@ -191,6 +191,56 @@ h6 {
     max-width: 280px;
 }
 
+.home-cta-2 {
+    background: #dd0c63;
+    padding: 3.125rem 0 2rem 0;;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-cta-2:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 72%;
+    width: 50%;
+    height: 100%;
+    background: #3d2595;
+    display: block;
+	-webkit-transform: skew(-9deg);
+	-moz-transform: skew(-9deg); 
+	-o-transform: skew(-9deg); 
+}
+
+.home-cta-2-inner {
+    position: relative;
+    z-index: 3;
+}
+
+.home-cta-2 .followtext {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.75rem;    
+    line-height: 1;
+    font-weight: 400;
+    margin-right: 100px;
+    text-align: left;
+}
+
+.home-cta-2 .followtext > span {
+    font-size: 135px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 0.5rem;
+    letter-spacing: -7px;
+}
+
+.home-cta-2 .followtext,
+.home-cta-2 .followpic {
+    vertical-align: middle;
+    display: inline-block;
+}
+
 @media (min-width: 992px) {
     .hero-title {
         font-size: 3.75rem;
@@ -301,6 +351,24 @@ h6 {
     .site-header .navbar-nav {
         padding-top: .5rem;
     }
+    
+    .home-cta-2 .followtext {
+        font-size: 1.25rem;
+        margin-right: 50px;
+    }
+    
+    .home-cta-2 .followtext > span {
+        font-size: 90px;
+        letter-spacing: -2px;
+    }
+    
+    .home-cta-2 .followpic {
+        max-width: 375px;
+    }
+    
+    .home-cta-2:before {
+        left: 70%;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -308,15 +376,74 @@ h6 {
         min-height: 1px;
         padding: 3rem 0;
     }
+    
+    .home-cta-2 .followtext {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+    
+    .home-cta-2 .followtext > span {
+        font-size: 72px;
+    }
+    
+    .home-cta-2 .followpic {
+        max-width: 275px;
+    }
+    
+    .home-cta-2:before {
+        left: 67%;
+    }
 }
 
 @media (max-width: 767.98px) {
+    .home-cta-2  {
+        padding: 1.5rem 0 1rem;    
+    }
     
+    .home-cta-2 .followtext {
+        font-size: 0.837rem;
+        margin-right: 10px;
+    }
+    
+    .home-cta-2 .followtext > span {
+        font-size: 60px;
+    }
+    
+    .home-cta-2 .followpic {
+        max-width: 200px;
+    }
+    
+    .home-cta-2:before {
+        left: 70%;
+    } 
 }
 
 @media (max-width: 575.98px) {
     .list-w-icons .media > img {
         height: 50px;
         width: auto;
+    }
+    
+    .home-cta-2 .followtext {
+        font-size: 0.837rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .home-cta-2 .followtext > span {
+        font-size: 64px;
+    }
+    
+    .home-cta-2 .followpic {
+        max-width: 200px;
+    }
+    
+    .home-cta-2:before {
+        left: 50%;
+        width: 100%
+    } 
+    
+    .home-cta-2  {
+        padding: 1rem 0 1.5rem;    
     }
 }

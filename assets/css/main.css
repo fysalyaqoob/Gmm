@@ -290,6 +290,66 @@ h6 {
     padding-left: 4rem;
 }
 
+.bg-faded {
+    background: #f2f2f2;
+}
+
+.mgallery {
+    padding-top: 5rem;
+}
+
+.mgallery .mgallery-item {
+    text-decoration: none;
+    position: relative;
+    display:  block;
+    overflow: hidden;
+}
+
+.mgallery .mgallery-item figure {
+    margin: 0;
+    background: rgba(211, 12, 106, 1);
+}
+
+.mgallery .mgallery-item figure > img {
+    width: 100%;
+}
+
+.mgallery .mgallery-item figcaption {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    padding: 1rem;
+    top: 50%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all .21s;
+}
+
+.mgallery .mgallery-item:hover figcaption {
+    opacity: 1;
+}
+
+.mgallery .mgallery-item:hover figure > img {
+    opacity: 0.21;
+    transition: .15s ease-in-out;
+}
+
+.mgallery .row {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+
+.mgallery [class^="col-"] {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    margin-bottom: 15px;
+}
+
 @media (min-width: 992px) {
     .hero-title {
         font-size: 3.75rem;
@@ -528,6 +588,16 @@ h6 {
     
     .list-media-02 .media-item .media-body {
         padding-top: 2rem;
+    }
+    
+    .mgallery .mgallery-item figcaption  {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .trust-logos .tlogo > img {
+        height: 25px;
+        width: auto;
     }
 }
 
